@@ -49,9 +49,11 @@
 				<div style="font-size:5em;color:red;">Hello World!</div>
 			We also want to 'generally' not use javascript within our html. But that is also possible!
 
+      <div id="text_js"></div>
+
       <script>
 				var textnode = document.createTextNode("hi!");
-        document.appendChild(textnode);
+        document.getElementById("text_js").appendChild(textnode);
 			</script>
 
       A good rule of thumb is this:
