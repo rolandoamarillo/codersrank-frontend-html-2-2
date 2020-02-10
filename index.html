@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Page Title</title>
-  </head>
-  <body>
 
-    <h1>My First Website</h1>
-    <p>My first paragraph.</p>
+<head>
+	<title>DevFactor</title> <!-- Title in the browser window -->
+</head>
 
-  </body>
+<body>
+	Hello, World! <--this is text. <p>Hello, World!</p>
+		<-- this is paragraph, notice the spacing <strong>This is bold</strong>
+			<i>This is italics</i>
+			<u>This is underlined</u>
+			<br>
+			<table border="1">
+				<tr>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</table>
+
+			<iframe src="https://www.google.com/" height="500" width="500"></iframe>
+
+			There are many more "tags" that come stock with HTML. Many are "deprecated", this means that you should
+			refrain from using them because they are no longer supported.
+
+			For example:
+
+			<b>Hello!</b>
+			<strong>Hello!</strong>
+			both produce the same output. But strong is preferred, while b is not.
+			Also remember to close your tags! Otherwise we get tag leak!
+
+			<strong>This is bold.</strong>
+			<i>This is italics</i>
+			We can also link to other pages. <a href="https://www.google.com/">Look</a>
+			<br>
+      Also we can embbed images. See <img src="https://picsum.photos/600/500" height="500" width="600"><br>
+
+      We can combine links and images to make link through images:
+
+			<a href="https://www.google.com/"><img src="https://picsum.photos/600/500" height="500" width="600"></a><br>
+
+      Generally speaking, we want to avoid using CSS from within our HTML.<br>
+      But it is possible!
+				<div style="font-size:5em;color:red;">Hello World!</div>
+			We also want to 'generally' not use javascript within our html. But that is also possible!
+
+      <script>
+				var textnode = document.createTextNode("hi!");
+        document.appendChild(textnode);
+			</script>
+
+      A good rule of thumb is this:
+      Use HTML for templating.
+      Use CSS / SASS / LESS for styling. 
+      Use JavaScript for FRONTEND code. But link the JS file instead of embedding. Similarly, any other code you find you could include in your html -> leave it out.
+      Let the HTML do its job.
+</body>
+
 </html>
